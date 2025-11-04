@@ -1,0 +1,66 @@
+site_name: hhzs's wiki
+theme:
+  name: material
+  logo: image/pig.png # logo 图片
+  favicon: image/pig.png # 网站图标
+  language: zh
+  features: # 功能  
+    - content.code.copy # 复制代码按钮
+    - content.code.annotate #代码中注释
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+    annotation: material/bell-circle  #与admontion平级
+
+# 代码仓库信息
+repo_name: hhzs1024/knob_soft_LCD # 仓库名称
+repo_url: https://github.com/hhzs1024/knob_soft_LCD.git # 仓库地址
+# 版权信息
+copyright: Copyright &copy; 2025 ~ now | 🚀 hhzs
+
+# 额外配置项
+extra:
+  generator: false # 是否显示生成器
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hhzs1024/
+
+# 扩展
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition            #警告
+  - pymdownx.details      #细节
+  - pymdownx.superfences  #超级围栏 以上三个作文字框显示
+  - attr_list
+  - md_in_html
+
+use_directory_urls: false
+
+nav:
+    - 首页: index.md
+    - 嵌入式:
+      - 电路: embedded.md
+    - mkdocs: 
+      - mkdocs使用: ./mkdocs/mkdocs.md
+      - markdown语法: ./mkdocs/markdown.md
+    - cortexM3:
+      - 概览: ./mkdocs/cortexM3/cortexM3.md
+    - assembly:
+      - 汇编实例: ./mkdocs/assembly/assembly.md
+    - 关于: about.md

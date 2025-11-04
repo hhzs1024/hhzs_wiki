@@ -49,18 +49,24 @@ markdown_extensions:
   - pymdownx.superfences  #超级围栏 以上三个作文字框显示
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 use_directory_urls: false
 
 nav:
-    - 首页: index.md
-    - 嵌入式:
-      - 电路: embedded.md
-    - mkdocs: 
-      - mkdocs使用: ./mkdocs/mkdocs.md
-      - markdown语法: ./mkdocs/markdown.md
-    - cortexM3:
-      - 概览: ./mkdocs/cortexM3/cortexM3.md
-    - assembly:
-      - 汇编实例: ./mkdocs/assembly/assembly.md
+  - 首页: 
+    - 首页: "index.md"
     - 关于: about.md
+  - 嵌入式:
+    - 电路: embedded.md
+  - mkdocs: 
+    - mkdocs使用: ./mkdocs/mkdocs/mkdocs.md
+    - markdown语法: ./mkdocs/mkdocs/markdown.md
+  - cortexM3:
+    - 概览: ./mkdocs/cortexM3/cortexM3.md
+  - assembly:
+    - 汇编实例: ./mkdocs/assembly/assembly.md
+  - keil:
+    - target用法: ./mkdocs/keil/target.md

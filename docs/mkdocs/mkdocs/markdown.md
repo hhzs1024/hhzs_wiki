@@ -67,25 +67,25 @@ markdown直接输入网址：https://www.example.com
     ![替代文字](图片路径)
     ![替代文字](图片路径 "图片标题")
 
-![123](../image/pig.png)
+![123](../../image/pig.png)
 
 #### 图片尺寸控制
 需要使用HTML标签控制，在mkdocs.yaml文件添加`use_directory_urls: false`来解决<img>图片加载失败问题  
-<img src="../image/pig.png" width="24">
+<img src="../../image/pig.png" width="24">
 
-<img src="../image/pig.png" alt="描述文字" width="24" height="24">
-<img src="../image/捕获.PNG" alt="描述文字" width="50%">
-<img src="../image/pig.png" alt="描述文字" style="width: 24px; height: auto;">
+<img src="../../image/pig.png" alt="描述文字" width="24" height="24">
+<img src="../../image/捕获.PNG" alt="描述文字" width="50%">
+<img src="../../image/pig.png" alt="描述文字" style="width: 24px; height: auto;">
 
 > 居中
 
 <div align="center">
-  <img src="../image/pig.png" alt="juzhong">
+  <img src="../../image/pig.png" alt="juzhong">
 </div>
 
-  <img src="../image/pig.png" alt="juzhong" style="float:left;margin-right:20px;">
+  <img src="../../image/pig.png" alt="juzhong" style="float:left;margin-right:20px;">
 
-  <img src="../image/pig.png" alt="juzhong" style="float:right;margin-right:20px;">
+  <img src="../../image/pig.png" alt="juzhong" style="float:right;margin-right:20px;">
 
 > 微标
 <!-- 项目徽章 -->
@@ -97,9 +97,9 @@ markdown直接输入网址：https://www.example.com
 
 > 画廊
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  <img src="../image/pig.png" alt="图片1" style="width: 5%; margin: 10px;">
-  <img src="../image/pig.png" alt="图片2" style="width: 5%; margin: 10px;">
-  <img src="../image/pig.png" alt="图片3" style="width: 5%; margin: 10px;">
+  <img src="../../image/pig.png" alt="图片1" style="width: 5%; margin: 10px;">
+  <img src="../../image/pig.png" alt="图片2" style="width: 5%; margin: 10px;">
+  <img src="../../image/pig.png" alt="图片3" style="width: 5%; margin: 10px;">
 </div>
 
 

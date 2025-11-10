@@ -23,6 +23,22 @@ theme:
       quote: fontawesome/solid/quote-left
     annotation: material/bell-circle  #与admontion平级
 
+
+nav:
+  - 首页: 
+    - 首页: "index.md"
+    - 关于: about.md
+  - 嵌入式:
+    - 电路: embedded.md
+    - 汇编实例: ./mkdocs/assembly/assembly.md
+    - cortexM3: ./mkdocs/cortexM3/cortexM3.md
+    - keil target用法: ./mkdocs/keil/target.md
+    - Jflash Spi: ./mkdocs/Jlink/jlink_spi.md
+  - mkdocs: 
+    - mkdocs使用: ./mkdocs/mkdocs/mkdocs.md
+    - markdown语法: ./mkdocs/mkdocs/markdown.md
+
+
 # 代码仓库信息
 repo_name: hhzs1024/knob_soft_LCD # 仓库名称
 repo_url: https://github.com/hhzs1024/knob_soft_LCD.git # 仓库地址
@@ -35,6 +51,9 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/hhzs1024/
+
+extra_css:
+  - mkdocs/Jlink/extra.css
 
 # 扩展
 markdown_extensions:
@@ -54,19 +73,3 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 use_directory_urls: false
-
-nav:
-  - 首页: 
-    - 首页: "index.md"
-    - 关于: about.md
-  - 嵌入式:
-    - 电路: embedded.md
-  - mkdocs: 
-    - mkdocs使用: ./mkdocs/mkdocs/mkdocs.md
-    - markdown语法: ./mkdocs/mkdocs/markdown.md
-  - cortexM3:
-    - 概览: ./mkdocs/cortexM3/cortexM3.md
-  - assembly:
-    - 汇编实例: ./mkdocs/assembly/assembly.md
-  - keil:
-    - target用法: ./mkdocs/keil/target.md

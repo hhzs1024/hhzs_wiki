@@ -32,7 +32,7 @@ theme:
 ## 6. 提示
 
 !!! Note "提示"
-    本功能使用如下：一个块以`!!!`开头，后跟一个用作类型限定符的关键字: `note, quote, tip, info, warning...`。块的内容在下一行，缩进四个空格：
+    本功能使用如下：一个块以`!!!`或者`???`开头，`???`表示默认折叠，`???+`表示默认展开。后跟一个用作类型限定符的关键字: `note, quote, tip, info, warning...`。块的内容在下一行，缩进四个空格：
     该框架需开启以下功能：  
     ```yaml linenums="1"
     markdown_extensions:
@@ -56,7 +56,7 @@ theme:
           quote: fontawesome/solid/quote-left
     ```
     > 可多重嵌套
-    !!! abstract
+    ??? abstract "展开:octicons-chevron-down-12:"
         !!! info
         !!! tip
         !!! success

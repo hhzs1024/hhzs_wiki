@@ -42,3 +42,10 @@ void GPIO_Config(void) {
 编译完成后输出编译信息：  
 在魔术棒工具中`User->After Build/Rebuild`，加上以下命令`cmd /c "echo: && echo "Current Define" && echo: "`或者其他脚本文件。  
 使用`#pragma message(" ")`不生效，待确认
+
+## 使用
+
+下拉栏选择需要的project target
+
+!!! danger "注意"
+    切换target后建议rebuild，否则增量编译的可能会出错，实测切换后不会重新编译头文件，导致IO使用错误。

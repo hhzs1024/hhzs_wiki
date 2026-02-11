@@ -34,9 +34,12 @@ nav:
     - cortexM3: ./mkdocs/cortexM3/cortexM3.md
     - keil target用法: ./mkdocs/keil/target.md
     - Jflash Spi: ./mkdocs/Jlink/jlink_spi.md
+    - Jflash并行烧录: ./mkdocs/Jlink/ParallelProgram3.md
+    - 多工程管理: ./mkdocs/keil/multi-project.md
   - mkdocs: 
     - mkdocs使用: ./mkdocs/mkdocs/mkdocs.md
     - markdown语法: ./mkdocs/mkdocs/markdown.md
+  - 正则表达式: ./mkdocs/RegEx/Regular_Expression.md
 
 
 # 代码仓库信息
